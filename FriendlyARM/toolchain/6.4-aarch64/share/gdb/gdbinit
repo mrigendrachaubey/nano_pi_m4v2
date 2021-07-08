@@ -1,0 +1,6 @@
+python
+import sys
+sys.path.insert(0, '/opt/FriendlyARM/toolchain/6.4-aarch64/share/gcc-6.4.0/python')
+from libstdcxx.v6.printers import register_libstdcxx_printers
+register_libstdcxx_printers (None)
+end
