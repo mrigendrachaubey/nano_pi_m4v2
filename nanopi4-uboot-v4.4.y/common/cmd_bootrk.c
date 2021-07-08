@@ -278,7 +278,7 @@ static rk_boot_img_hdr * rk_load_image_from_storage(const disk_partition_t* ptn,
 		if (StorageReadLba(sector, (void *)(unsigned long) hdr->ramdisk_addr, \
 					blocks) != 0) {
 			FBTERR("bootrk: failed to read ramdisk\n");
-			goto fail;
+			//goto fail;
 		}
 #ifdef CONFIG_SECUREBOOT_CRYPTO
 		if (hdr->second_size != 0) {
